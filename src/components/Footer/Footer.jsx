@@ -1,10 +1,35 @@
-import React from 'react';
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from 'lucide-react';
-import './Footer.css';
+import React from "react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Facebook,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer
+      className="footer"
+      style={{ position: "relative", overflow: "hidden" }}
+    >
+      {/* Animated Bubbles */}
+      <div className="bubbles-container">
+        {[...Array(12)].map((_, i) => (
+          <div
+            key={i}
+            className={`footer-bubble bubble-${i + 1}`}
+            style={{
+              left: `${Math.random() * 100}%`,
+              animationDelay: "0s",
+              animationDuration: `${8 + Math.random() * 12}s`,
+            }}
+          />
+        ))}
+      </div>
       <div className="footer-container">
         <div className="footer-grid">
           {/* Company Info */}
@@ -16,13 +41,15 @@ const Footer = () => {
                 </div>
               </div>
               <div className="company-info">
-                <h3 className="company-name">Diver Lee's Underwater Solutions</h3>
+                <h3 className="company-name">
+                  Diver Lee's Underwater Solutions
+                </h3>
                 <p className="company-subtitle">Underwater Solutions LLC</p>
               </div>
             </div>
             <p className="company-description">
-              Professional underwater services serving DFW Lakes with expertise in 
-              inspections, search & recovery, and marine cleaning solutions.
+              Professional underwater services serving DFW Lakes with expertise
+              in inspections, search & recovery, and marine cleaning solutions.
             </p>
             <div className="social-links">
               <a href="#" className="social-link">
@@ -44,7 +71,7 @@ const Footer = () => {
               <div className="contact-item">
                 <Phone className="contact-icon" />
                 <div className="contact-details">
-                  <p className="contact-primary">(817) 123-DIVE</p>
+                  <p className="contact-primary">(817) 938-8016</p>
                   <p className="contact-secondary">24/7 Emergency</p>
                 </div>
               </div>
@@ -81,7 +108,9 @@ const Footer = () => {
               </div>
               <div className="emergency-notice">
                 <p className="emergency-title">Emergency Service</p>
-                <p className="emergency-description">Available 24/7 for urgent underwater needs</p>
+                <p className="emergency-description">
+                  Available 24/7 for urgent underwater needs
+                </p>
               </div>
             </div>
           </div>
@@ -92,11 +121,6 @@ const Footer = () => {
           <div className="footer-bottom-content">
             <div className="copyright">
               © 2025 Diver Lee's Underwater Solutions LLC. All rights reserved.
-            </div>
-            <div className="footer-links">
-              <a href="#" className="footer-link">Privacy Policy</a>
-              <a href="#" className="footer-link">Terms of Service</a>
-              <a href="#" className="footer-link">Insurance</a>
             </div>
           </div>
         </div>
