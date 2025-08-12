@@ -54,8 +54,8 @@ const Hero = () => {
 
           <div className="hero-stats">
             <div className="stat-item">
-              <div className="stat-number">Veteran Owned</div>
-              <div className="stat-label">And operated</div>
+              <div className="stat-number">Veteran</div>
+              <div className="stat-label">Owned and operated</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">24/7</div>
