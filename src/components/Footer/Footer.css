@@ -1,0 +1,254 @@
+.footer {
+  background-color: #0f172a;
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.company-section {
+  grid-column: span 1;
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.company-logo {
+  background: linear-gradient(to right, #22d3ee, #3b82f6);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.logo-circle {
+  width: 2rem;
+  height: 2rem;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.company-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.company-subtitle {
+  color: #94a3b8;
+  margin: 0;
+}
+
+.company-description {
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+  max-width: 28rem;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  background-color: #1e293b;
+  padding: 0.75rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background-color: #06b6d4;
+}
+
+.social-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.contact-section,
+.hours-section {
+  /* Styles for contact and hours sections */
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #22d3ee;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #22d3ee;
+}
+
+.contact-details {
+  /* Container for contact details */
+}
+
+.contact-primary {
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact-secondary {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.hours-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hours-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hours-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #22d3ee;
+}
+
+.hours-title {
+  font-weight: 600;
+  margin: 0;
+}
+
+.hours-list {
+  color: #cbd5e1;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.hours-list p {
+  margin: 0;
+}
+
+.emergency-notice {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #1e293b;
+  border-radius: 0.5rem;
+}
+
+.emergency-title {
+  font-size: 0.875rem;
+  color: #22d3ee;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+
+.emergency-description {
+  font-size: 0.875rem;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #334155;
+  padding-top: 2rem;
+}
+
+.footer-bottom-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.copyright {
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.footer-link {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #22d3ee;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .company-section {
+    grid-column: span 2;
+  }
+
+  .footer-bottom-content {
+    flex-direction: row;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .company-section {
+    grid-column: span 1;
+  }
+}
