@@ -24,11 +24,17 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
-            Professional
+            Diver Lee's
             <span className="hero-title-gradient">
               Underwater Solutions
             </span>
           </h1>
+          <p className="hero-subtitle">
+            Matthew Lee Andre
+          </p>
+          <p className="hero-subtitle">
+            CL Mayhew
+          </p>
           <p className="hero-subtitle">
             Expert dive services for inspections, search & recovery, and marine cleaning. 
             Serving Texas Lakes with professional precision and safety.
@@ -38,7 +44,7 @@ const Hero = () => {
           <div className="hero-contact">
             <div className="contact-item">
               <span className="contact-label">Call Now:</span>
-              <span className="contact-value">(555) 123-DIVE</span>
+              <span className="contact-value">(817) 123-DIVE</span>
             </div>
             <div className="contact-item">
               <span className="contact-label">Email:</span>
