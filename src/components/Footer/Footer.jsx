@@ -21,7 +21,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="company-description">
-              Professional underwater services serving the coastal community with expertise in 
+              Professional underwater services serving DFW Lakes with expertise in 
               inspections, search & recovery, and marine cleaning solutions.
             </p>
             <div className="social-links">
@@ -44,7 +44,7 @@ const Footer = () => {
               <div className="contact-item">
                 <Phone className="contact-icon" />
                 <div className="contact-details">
-                  <p className="contact-primary">(555) 123-DIVE</p>
+                  <p className="contact-primary">(817) 123-DIVE</p>
                   <p className="contact-secondary">24/7 Emergency</p>
                 </div>
               </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                 <MapPin className="contact-icon" />
                 <div className="contact-details">
                   <p className="contact-primary">123 Harbor Drive</p>
-                  <p className="contact-primary">Coastal City, CA 90210</p>
+                  <p className="contact-primary">Lake Worth, Tx</p>
                 </div>
               </div>
             </div>
