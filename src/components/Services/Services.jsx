@@ -5,7 +5,7 @@ import "./Services.css";
 const Services = () => {
   const services = [
     {
-      icon: <Eye className="service-icon" />,
+      icon: <Eye className="service-icon" color="#d9ac26ff" />,
       title: "Underwater Inspection",
       price: "Free with service",
       description:
@@ -17,7 +17,7 @@ const Services = () => {
       ],
     },
     {
-      icon: <Search className="service-icon" />,
+      icon: <Search className="service-icon" color="#d9ac26ff" />,
       title: "Search & Recovery",
       price: "Contact for quote",
       description:
@@ -30,7 +30,7 @@ const Services = () => {
       ],
     },
     {
-      icon: <Waves className="service-icon" />,
+      icon: <Waves className="service-icon" color="#d9ac26ff" />,
       title: "Boat & Hull Cleaning",
       price: "Starting at $150",
       description:
@@ -72,7 +72,7 @@ const Services = () => {
                 <div className="service-features">
                   {service.features.map((feature, idx) => (
                     <div key={idx} className="service-feature">
-                      <CheckCircle className="feature-icon" />
+                      <CheckCircle className="feature-icon" color="#d9ac26ff" />
                       <span className="feature-text">{feature}</span>
                     </div>
                   ))}
