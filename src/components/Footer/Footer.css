@@ -1,5 +1,5 @@
 .footer {
-  background-color: #0f172a;
+  background-color: #222222;
   color: white;
   padding-top: 4rem;
   padding-bottom: 2rem;
@@ -24,14 +24,6 @@
 
 .footer-bubble {
   position: absolute;
-  background: radial-gradient(
-    circle at 30% 30%,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.1)
-  );
-  border-radius: 50%;
-  pointer-events: none;
   opacity: 0.3;
   animation: footer-float-up linear infinite 0.5s;
 }
@@ -59,28 +51,6 @@
   margin-bottom: 1.5rem;
 }
 
-.company-logo {
-  background: linear-gradient(to right, #22d3ee, #3b82f6);
-  padding: 0.5rem;
-  border-radius: 50%;
-}
-
-.logo-circle {
-  width: 2rem;
-  height: 2rem;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-text {
-  color: #2563eb;
-  font-weight: bold;
-  font-size: 0.875rem;
-}
-
 .company-name {
   font-size: 1.25rem;
   font-weight: bold;
@@ -105,7 +75,7 @@
 }
 
 .social-link {
-  background-color: #1e293b;
+  background-color: #593b6e62;
   padding: 0.75rem;
   border-radius: 50%;
   transition: background-color 0.3s ease;
@@ -114,7 +84,7 @@
 }
 
 .social-link:hover {
-  background-color: #06b6d4;
+  background-color: #593b6e;
 }
 
 .social-icon {
@@ -131,7 +101,7 @@
   font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #22d3ee;
+  color: #d9ac26ff;
 }
 
 .contact-list {
@@ -149,7 +119,6 @@
 .contact-icon {
   width: 1.25rem;
   height: 1.25rem;
-  color: #22d3ee;
 }
 
 .contact-details {
@@ -205,13 +174,13 @@
 .emergency-notice {
   margin-top: 1rem;
   padding: 0.75rem;
-  background-color: #1e293b;
+  background: #593b6e40;
   border-radius: 0.5rem;
 }
 
 .emergency-title {
   font-size: 0.875rem;
-  color: #22d3ee;
+  color: #d9ac26ff;
   font-weight: 600;
   margin: 0 0 0.25rem 0;
 }
@@ -254,7 +223,7 @@
 }
 
 .footer-link:hover {
-  color: #22d3ee;
+  color: #d9ac26ff;
 }
 
 /* Tablet Styles */

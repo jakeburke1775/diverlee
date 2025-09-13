@@ -50,7 +50,7 @@
 }
 
 .service-card-header {
-  background: linear-gradient(to bottom, #593b6e, #555555);
+  background: linear-gradient(to left, #593b6e, #555555);
   padding: 1.5rem;
   color: white;
 }
