@@ -50,8 +50,7 @@ const Services = () => {
         <div className="services-header">
           <h2 className="services-title">Our Services</h2>
           <p className="services-subtitle">
-            Professional underwater services delivered by certified commercial
-            divers with 5+ years of combined experience.
+            24/7 Emergency Response Available!
           </p>
         </div>
 

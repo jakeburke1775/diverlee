@@ -1,4 +1,6 @@
 import React from "react";
+import logo from "../../assets/diverLeeLogo.svg";
+import bubble from "../../assets/bubble.svg";
 import { ChevronDown } from "lucide-react";
 import "./Hero.css";
 
@@ -7,17 +9,27 @@ const Hero = () => {
     <section id="home" className="hero-section">
       {/* Animated Bubbles */}
       <div className="bubbles-container">
-        {[...Array(12)].map((_, i) => {
-          // Randomly decide if this bubble should be in front (z-index: 10) or behind (z-index: 1)
-          const zIndex = Math.random() < 0.33 ? 10 : 1; // ~1/3 in front
+        {[...Array(16)].map((_, i) => {
+          const zIndex = Math.random() < 0.33 ? 10 : 1;
+          // Set the center exclusion zone (percentage of the screen)
+          const centerPercent = 70; // Change this value to adjust the center exclusion zone
+          const sidePercent = (100 - centerPercent) / 2;
+          const region = Math.random() < 0.5 ? "left" : "right";
+          const left =
+            region === "left"
+              ? Math.random() * sidePercent // 0 to sidePercent
+              : 100 - sidePercent + Math.random() * sidePercent; // (100-sidePercent) to 100
           return (
-            <div
+            <img
               key={i}
+              src={bubble}
+              alt="Bubble"
               className={`bubble bubble-${i + 1}`}
               style={{
-                left: `${Math.random() * 100}%`,
+                left: `${left}%`,
                 animationDelay: "0s",
                 animationDuration: `${8 + Math.random() * 12}s`,
+                zIndex,
               }}
             />
           );
@@ -27,15 +39,19 @@ const Hero = () => {
       {/* Content */}
       <div className="hero-content">
         <div className="hero-text">
-          <h1 className="hero-title">
-            Diver Lee's
-            <span className="hero-title-gradient">Underwater Solutions</span>
-          </h1>
-          <p className="hero-owner">Matthew Lee Andre</p>
-          <p className="hero-owner hero-owner-last">CL Mayhew</p>
+          <div className="hero-logo-wrapper">
+            <img
+              src={logo}
+              alt="Diver Lee's Underwater Solutions"
+              className="hero-logo-svg"
+            />
+          </div>
           <p className="hero-subtitle">
             Expert dive services for inspections, search & recovery, and marine
             cleaning. Serving DFW Lakes with professional precision and safety.
+          </p>
+          <p className="hero-subtitle">
+            Veteran owned and operated. Licensed, bonded, and insured.
           </p>
 
           {/* Contact Info Prominently Displayed */}
@@ -49,31 +65,12 @@ const Hero = () => {
               <span className="contact-value">info@diverleeunderwater.com</span>
             </div>
           </div>
-
-          <div className="hero-stats">
-            <div className="stat-item">
-              <div className="stat-number">24/7</div>
-              <div className="stat-label">Emergency Response</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">5+</div>
-              <div className="stat-label">Years Experience</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">100%</div>
-              <div className="stat-label">Licensed & Insured</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">Veteran</div>
-              <div className="stat-label">Owned & Operated</div>
-            </div>
-          </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
       <div className="scroll-indicator">
-        <ChevronDown className="scroll-icon" />
+        <ChevronDown className="scroll-icon" color="#d9ac26ff" />
       </div>
     </section>
   );

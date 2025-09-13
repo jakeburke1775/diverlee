@@ -1,4 +1,5 @@
 import React from "react";
+import bubble from "../../assets/bubble.svg";
 import {
   Phone,
   Mail,
@@ -18,17 +19,23 @@ const Footer = () => {
     >
       {/* Animated Bubbles */}
       <div className="bubbles-container">
-        {[...Array(12)].map((_, i) => (
-          <div
-            key={i}
-            className={`footer-bubble bubble-${i + 1}`}
-            style={{
-              left: `${Math.random() * 100}%`,
-              animationDelay: "0s",
-              animationDuration: `${8 + Math.random() * 12}s`,
-            }}
-          />
-        ))}
+        {[...Array(12)].map((_, i) => {
+          const zIndex = Math.random() < 0.33 ? 10 : 1;
+          return (
+            <img
+              key={i}
+              src={bubble}
+              alt="Bubble"
+              className={`footer-bubble bubble-${i + 1}`}
+              style={{
+                left: `${Math.random() * 100}%`,
+                animationDelay: "0s",
+                animationDuration: `${8 + Math.random() * 12}s`,
+                zIndex,
+              }}
+            />
+          );
+        })}
       </div>
       <div className="footer-container">
         <div className="footer-grid">
@@ -53,13 +60,13 @@ const Footer = () => {
             </p>
             <div className="social-links">
               <a href="#" className="social-link">
-                <Facebook className="social-icon" />
+                <Facebook className="social-icon" color="#d9ac26ff" />
               </a>
               <a href="#" className="social-link">
-                <Instagram className="social-icon" />
+                <Instagram className="social-icon" color="#d9ac26ff" />
               </a>
               <a href="#" className="social-link">
-                <Linkedin className="social-icon" />
+                <Linkedin className="social-icon" color="#d9ac26ff" />
               </a>
             </div>
           </div>
@@ -69,20 +76,20 @@ const Footer = () => {
             <h4 className="section-title">Contact Info</h4>
             <div className="contact-list">
               <div className="contact-item">
-                <Phone className="contact-icon" />
+                <Phone className="contact-icon" color="#d9ac26ff" />
                 <div className="contact-details">
                   <p className="contact-primary">(817) 938-8016</p>
                   <p className="contact-secondary">24/7 Emergency</p>
                 </div>
               </div>
               <div className="contact-item">
-                <Mail className="contact-icon" />
+                <Mail className="contact-icon" color="#d9ac26ff" />
                 <div className="contact-details">
                   <p className="contact-primary">info@diverleeunderwater.com</p>
                 </div>
               </div>
               <div className="contact-item">
-                <MapPin className="contact-icon" />
+                <MapPin className="contact-icon" color="#d9ac26ff" />
                 <div className="contact-details">
                   <p className="contact-primary">123 Harbor Drive</p>
                   <p className="contact-primary">Lake Worth, Tx</p>
@@ -96,7 +103,7 @@ const Footer = () => {
             <h4 className="section-title">Business Hours</h4>
             <div className="hours-content">
               <div className="hours-header">
-                <Clock className="hours-icon" />
+                <Clock className="hours-icon" color="#d9ac26ff" />
                 <div>
                   <p className="hours-title">Regular Hours</p>
                 </div>
