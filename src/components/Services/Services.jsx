@@ -1,5 +1,6 @@
 import React from "react";
 import { Search, Eye, Waves, CheckCircle } from "lucide-react";
+import bubble from "../../assets/bubble.svg";
 import "./Services.css";
 
 const Services = () => {
@@ -71,7 +72,11 @@ const Services = () => {
                 <div className="service-features">
                   {service.features.map((feature, idx) => (
                     <div key={idx} className="service-feature">
-                      <CheckCircle className="feature-icon" color="#d9ac26ff" />
+                      <img
+                        src={bubble}
+                        alt="Bubble"
+                        className="feature-icon bubble-icon"
+                      />
                       <span className="feature-text">{feature}</span>
                     </div>
                   ))}
