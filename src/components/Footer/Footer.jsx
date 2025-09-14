@@ -29,7 +29,9 @@ const Footer = () => {
               className={`footer-bubble bubble-${i + 1}`}
               style={{
                 left: `${Math.random() * 100}%`,
+                WebkitAnimationDelay: "0s",
                 animationDelay: "0s",
+                WebkitAnimationDuration: `${8 + Math.random() * 12}s`,
                 animationDuration: `${8 + Math.random() * 12}s`,
                 zIndex,
               }}
@@ -42,15 +44,8 @@ const Footer = () => {
           {/* Company Info */}
           <div className="company-section">
             <div className="company-header">
-              <div className="company-logo">
-                <div className="logo-circle">
-                  <span className="logo-text">DL</span>
-                </div>
-              </div>
               <div className="company-info">
-                <h3 className="company-name">
-                  Diver Lee's Underwater Solutions
-                </h3>
+                <h3 className="company-name">Diver Lee's</h3>
                 <p className="company-subtitle">Underwater Solutions LLC</p>
               </div>
             </div>
