@@ -15,6 +15,7 @@ const Services = () => {
         "Hull damage assessment",
         "Propeller inspection",
         "Photo/video documentation",
+        "Underwater surveying",
       ],
     },
     {

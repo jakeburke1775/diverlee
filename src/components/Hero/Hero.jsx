@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/diverLeeLogo.svg";
 import bubble from "../../assets/bubble.svg";
 import { ChevronDown } from "lucide-react";
 import "./Hero.css";
 
 const Hero = () => {
+  // State to track the current background
+  const [bgIndex, setBgIndex] = useState(0);
+
+  // Array of background classes
+  const bgClasses = ["teal-bg", "medblue-bg", "ltblue-bg"];
+
+  // Function to cycle through backgrounds
+  const cycleBackground = () => {
+    setBgIndex((prevIndex) => (prevIndex + 1) % bgClasses.length);
+  };
+
   return (
-    <section id="home" className="hero-section">
+    <section id="home" className={`hero-section ${bgClasses[bgIndex]}`}>
       {/* Animated Bubbles */}
       <div className="bubbles-container">
         {[...Array(16)].map((_, i) => {
@@ -44,6 +55,8 @@ const Hero = () => {
               src={logo}
               alt="Diver Lee's Underwater Solutions"
               className="hero-logo-svg"
+              onClick={cycleBackground}
+              style={{ cursor: "pointer" }}
             />
           </div>
           <p className="hero-subtitle">
