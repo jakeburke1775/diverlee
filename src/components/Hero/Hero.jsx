@@ -58,7 +58,7 @@ const Hero = () => {
           <div className="hero-contact">
             <div className="contact-item">
               <span className="contact-label">Call Now:</span>
-              <span className="contact-value">(817) 938-8016</span>
+              <span className="contact-value">(817) 205-4864</span>
             </div>
             <div className="contact-item">
               <span className="contact-label">Email:</span>

@@ -73,8 +73,15 @@ const Footer = () => {
               <div className="contact-item">
                 <Phone className="contact-icon" color="#d9ac26ff" />
                 <div className="contact-details">
-                  <p className="contact-primary">(817) 938-8016</p>
+                  <p className="contact-primary">(817) 205-4864</p>
                   <p className="contact-secondary">24/7 Emergency</p>
+                </div>
+              </div>
+              <div className="contact-item">
+                <Phone className="contact-icon" color="#d9ac26ff" />
+                <div className="contact-details">
+                  <p className="contact-primary">(817) 938-8016</p>
+                  <p className="contact-secondary">Office</p>
                 </div>
               </div>
               <div className="contact-item">
@@ -111,7 +118,8 @@ const Footer = () => {
               <div className="emergency-notice">
                 <p className="emergency-title">Emergency Service</p>
                 <p className="emergency-description">
-                  Available 24/7 for urgent underwater needs
+                  Available 24/7 for urgent underwater needs at an additional
+                  fee.
                 </p>
               </div>
             </div>
