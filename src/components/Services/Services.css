@@ -50,7 +50,7 @@
 }
 
 .service-card-header {
-  background: linear-gradient(to left, #593b6e, #555555);
+  background: linear-gradient(to left, #084953, #4f594f);
   padding: 1.5rem;
   color: white;
 }
@@ -110,8 +110,8 @@
 .bubble-icon {
   width: 1.25rem;
   height: 1.25rem;
-  filter: invert(78%) sepia(21%) saturate(2208%) hue-rotate(16deg)
-    brightness(96%) contrast(82%);
+  filter: invert(27%) sepia(48%) saturate(542%) hue-rotate(149deg)
+    brightness(65%) contrast(93%);
 }
 
 .feature-text {

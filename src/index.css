@@ -118,15 +118,15 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-  background: #593b6eff;
+  background: #071e34;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: radial-gradient(circle at 50% 50%, #d9ac26ff 60%, #593b6eff 130%);
+  background: radial-gradient(circle at 50% 50%, #d9ac26ff 60%, #084953 130%);
   border-radius: 4px;
 }
 
 ::selection {
   background: #d9ac26ff;
-  color: #593b6eff;
+  color: #084953;
 }

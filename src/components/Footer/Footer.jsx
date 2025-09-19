@@ -130,7 +130,8 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <div className="copyright">
-              © 2025 Diver Lee's Underwater Solutions LLC. All rights reserved.
+              © {new Date().getFullYear()} Diver Lee's Underwater Solutions LLC.
+              All rights reserved.
             </div>
           </div>
         </div>

@@ -12,7 +12,8 @@ const Hero = () => {
   const bgClasses = ["teal-bg", "medblue-bg", "ltblue-bg"];
 
   // Function to cycle through backgrounds
-  const cycleBackground = () => {
+  const cycleBackground = (evt) => {
+    evt.preventDefault();
     setBgIndex((prevIndex) => (prevIndex + 1) % bgClasses.length);
   };
 

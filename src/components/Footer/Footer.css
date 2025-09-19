@@ -75,16 +75,17 @@
 }
 
 .social-link {
-  background-color: #593b6e62;
+  background-color: #0849537e;
   padding: 0.75rem;
   border-radius: 50%;
   transition: background-color 0.3s ease;
   color: white;
   text-decoration: none;
+  visibility: hidden;
 }
 
 .social-link:hover {
-  background-color: #593b6e;
+  background-color: #084953;
 }
 
 .social-icon {
@@ -152,7 +153,6 @@
 .hours-icon {
   width: 1.25rem;
   height: 1.25rem;
-  color: #22d3ee;
 }
 
 .hours-title {
@@ -175,7 +175,7 @@
 .emergency-notice {
   margin-top: 1rem;
   padding: 0.75rem;
-  background: #593b6e40;
+  background: #08495375;
   border-radius: 0.5rem;
 }
 
